@@ -1,0 +1,450 @@
+@font-face {
+  font-family: 'SKODANext-Bold';
+  src: url(./font/SKODANext-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'SKODANext-Regular';
+  src: url(./font/SKODANext-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'SKODANext-Light';
+  src: url(./font/SKODANext-Light.otf) format('opentype');
+}
+/* SearchBar.css */
+
+.Safetypassport-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'SKODANext-Light';
+    font-weight:450;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+}
+.Safetypassport-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+  .Safetypassport-title{
+    width: 70%;
+    text-align: left;
+    font-size: 2rem; 
+    color: #333; 
+    margin: 0px 0px;
+  }
+  .Safetypassport-search-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px;
+  }
+  .search-by-dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 137px;
+    height: 49.6px;
+    padding: 15px;
+    border: 1px solid #E3E3E3;
+    border-right: none;
+    border-radius: 5px 0 0 5px; 
+    background-color: #00000029; 
+    cursor: pointer;
+    outline: none;
+    background-image: url('./Images/select_arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
+
+  .downarrow{
+    display: flex;
+    position: relative;
+    height: 15px;
+    width: auto;
+  }
+  .search-input {
+    width: 260px;
+    height: 48px;
+    border: none;
+    border: 1px solid #E3E3E3;
+    border-left: none;
+    border-radius: 0 5px 5px 0; 
+    outline: none;
+    padding: 0px;
+    padding-left: 10px; ;
+  }
+/* .main-content.sidebar-open .Safetypassport-wrapper {
+    margin-left: 240px; 
+  }
+.main-content.sidebar-closed .Safetypassport-wrapper {
+    margin-left: 80px; 
+  } */
+.control-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.export-button{
+    border-style: none;
+    border-radius: 25px;
+    background-color: #3BA937;
+    color: white;
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: 113px;
+    height: 48px; 
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+.control-button{
+  border-style: none;
+  border-radius: 25px;
+  background-color: #3BA937;
+  color: white;
+  height: 48px;
+  width: auto;
+  padding: 15px 25px;
+  margin-right: 20px; 
+}
+
+/* Toggle CSS */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 66px; 
+  height: 24px; 
+  margin: 5px 0;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; 
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 22px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; 
+  width: 20px; 
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #3BA937; 
+}
+
+input:checked:focus + .slider {
+  box-shadow: 0 0 1px #3BA937; 
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #F2F2F2; 
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px); 
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; 
+}
+.slider.round:before {
+  border-radius: 50%; 
+}
+
+.toggles-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px 0px 30px; 
+}
+/* Pagination CSS */
+
+.table-controls{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0; 
+}
+.checkbox-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-left: 12px;
+}
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px; 
+  margin-bottom: 12px; 
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 5px;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px; 
+}
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #F2F2F2;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 5px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid #3BA937;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.arrow-down{
+  width: auto;
+  height: 10px;
+  padding: 5px 0;
+  margin-left: 0px;
+}
+/* Pagination styles */
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.pagination button {
+  background-color: #E3E3E3;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px; 
+  margin: 0 15px; 
+}
+.pagination.back{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('./Images/back_arrow.png');
+}
+.pagination.back{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('./Images/front_arrow.png');
+}
+.pagination button:disabled {
+  cursor: not-allowed;
+}
+
+.pagination .current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+
+.data-table-container {
+  max-height: 300px; 
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: rgba(0,0,0,0.5) transparent; 
+}
+
+.data-table-container::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.data-table-container::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.data-table-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px; 
+}
+
+.data-table-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.data-table thead th{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: none;
+}
+
+/* Table CSS */
+
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 15px;
+  background-color: #707070;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.data-table th,
+.data-table td{
+  vertical-align: middle;
+}
+.data-table th {
+  padding: 15px 5px;
+  text-align: left;
+  background-color: #707070;
+  color: white;
+}
+.data-table td {
+  padding: 10px;
+  text-align: left;
+}
+.column-header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  /* overflow-y: auto; */
+}
+.data-table thead{
+  padding: 15px 5px;
+}
+
+.data-table thead tr:first-child th:first-child {
+  border-top-left-radius: 15px; 
+}
+
+.data-table thead tr:first-child th:last-child {
+  border-top-right-radius: 15px; 
+}
+
+.data-table .even-row {
+  background-color: #FFFFFF; 
+}
+
+.data-table .odd-row {
+  background-color: #E3E3E3; 
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items:flex-start;
+  margin-top: 15px;
+
+}
+.footer-wrapper .next-button {
+  margin: 0 auto; 
+}
+.next-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 25px;
+  background-color: #3BA937;
+  color: white;
+  background-image: url('./Images/icon_next.png');
+  background-position: right 70px center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  width: 207px;
+  height: 48px; 
+  margin-right: 20px; 
+}
+
+
+/* Style for the container that scrolls */
+.data-table-container {
+  max-height: 400px; /* Adjust based on your preference */
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(0,0,0,0.5) transparent; /* For Firefox, scrollbar thumb and track */
+  margin-bottom: 20px;
+}
+
+/* Styles for Webkit browsers like Chrome, Safari, and newer versions of Edge */
+.data-table-container::-webkit-scrollbar {
+  width: 8px; /* Adjust the width of the scrollbar */
+}
+
+.data-table-container::-webkit-scrollbar-track {
+  background: transparent; /* Makes the scrollbar track transparent */
+}
+
+.data-table-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent black for the scrollbar thumb */
+  border-radius: 10px; /* Optional: to make the thumb rounded */
+}
+
+.data-table-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,0.7); /* Darker shade on hover */
+}
+

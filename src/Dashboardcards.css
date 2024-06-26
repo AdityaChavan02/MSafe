@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'SKODANext-Bold';
+  src: url(./font/SKODANext-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'SKODANext-Regular';
+  src: url(./font/SKODANext-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'SKODANext-Light';
+  src: url(./font/SKODANext-Light.otf) format('opentype');
+}
+
+body{
+    background-color: #F2F2F2;
+}
+.dashboard-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: 'SKODANext-Light';
+  }
+  
+.dashboard-title {
+    width: 100%;
+    text-align: left;
+    font-size: 2rem; /* Adjust the size as needed */
+    color: #333; /* Adjust the color as needed */
+    padding: 0px 0px 0px 25px;
+    margin: 30px 0px 0px 0px;
+}
+  
+.dashboard-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    gap: 20px;
+  }
+  
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px; /* Adjust based on your design */
+    height: 180px; /* Adjust based on your design */
+    background-color: #FFF; /* Card background color */
+    border-radius: 2px; /* Rounded corners for the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Card shadow */
+    padding: 20px;
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+    margin-bottom: 10px;
+}
+  
+.dashboard-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+  }
+  /* .main-content.sidebar-open .dashboard-cards-wrapper {
+    margin-left: 240px; 
+  } 
+
+ .main-content.sidebar-closed .dashboard-cards-wrapper {
+    margin-left: 92px; 
+  }  */
+  
+.card-icon {
+    width: 70px; /* Icon size */
+    height: 70px; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between icon and title */
+  }
+  
+.card-title {
+    text-align: center;
+    color: #333; /* Text color for the title */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: 500; /* Medium font weight for the title */
+    margin-top: 10px;
+  }
+  

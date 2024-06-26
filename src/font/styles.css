@@ -1,0 +1,25 @@
+
+
+@font-face {
+  font-family: 'SKODANext-Regular';
+  src: url('SKODANext-Regular.eot?#iefix') format('embedded-opentype'),  url('SKODANext-Regular.otf')  format('opentype'),
+	     url('SKODANext-Regular.woff') format('woff'), url('SKODANext-Regular.ttf')  format('truetype'), url('SKODANext-Regular.svg#SKODANext-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SKODANext-Light';
+  src: url('SKODANext-Light.eot?#iefix') format('embedded-opentype'),  url('SKODANext-Light.otf')  format('opentype'),
+	     url('SKODANext-Light.woff') format('woff'), url('SKODANext-Light.ttf')  format('truetype'), url('SKODANext-Light.svg#SKODANext-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SKODANext-Bold';
+  src: url('SKODANext-Bold.eot?#iefix') format('embedded-opentype'),  url('SKODANext-Bold.otf')  format('opentype'),
+	     url('SKODANext-Bold.woff') format('woff'), url('SKODANext-Bold.ttf')  format('truetype'), url('SKODANext-Bold.svg#SKODANext-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

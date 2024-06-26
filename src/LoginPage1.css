@@ -1,0 +1,227 @@
+
+/* LoginPage.css */
+@font-face {
+  font-family: 'SKODANext-Bold';
+  src: url(./font/SKODANext-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'SKODANext-Regular';
+  src: url(./font/SKODANext-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'SKODANext-Light';
+  src: url(./font/SKODANext-Light.otf) format('opentype');
+}
+
+.login-container {
+    display: flex;
+    max-height: 100vh;
+    font-family: 'SKODANext-Bold','SKODANext-Regular','SKODANext-Light';
+  }
+  
+  .left-section {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-left: 5%; */
+    position: relative;
+  }
+  .login-logo {
+    position: absolute; /* Position it over the background */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half the logo's width and height */
+    max-width: 35%; /* Adjust as needed */
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 237, 237);
+    height: 100vh;
+    /* padding: 50px; */
+    font-family: 'SKODANext-Bold','SKODANext-Regular','SKODANext-Light';
+  }
+  
+  .form-container {
+    height: 45%;
+    width: 40%;
+    padding: 30px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-bottom: 20px;  */
+
+
+    /*UI Properties*/
+    background-color: #FFF;
+    box-shadow: 1px #00000029;
+    background-size: cover;
+    border-radius: 6px;
+    opacity: 1;
+    font-family: 'SKODANext-Regular';
+  }
+  .form {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .form-group {
+    padding-top: 30px;
+  }
+  
+
+  .form-label {
+    /* padding-bottom: 15px; */
+    display: flex;
+    color: #333;
+    font-family: 'SKODANext-Regular' ;
+    font-size: 24px;
+  }
+
+  .form-data {
+    display: block;
+    color: #333;
+    font-family: 'SKODANext-Bold' ;
+    font-size: 12px;
+
+  }
+  
+  .form-input {
+    width: 100%; /* Full width of the form container */
+    padding: 10px 0px; 
+    /* margin-bottom: 20px;  */
+    border: none;
+    border-bottom: 1px solid #ccc; /* Subtle border color */  
+    border-radius: 8px; /* Softened edges */
+    font-family: 'SKODANext-Regular', sans-serif; /* Ensure the font is consistent */
+    font-size: 14px; /* Readable font size */
+    color: #333; /* Font color */
+    border-radius: 0;
+  }
+  .form-input:focus{
+    outline: none;
+  }
+  .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px; 
+    margin-bottom: 12px; 
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px; 
+  }
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #F2F2F2;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 5px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid #3BA937;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  .form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content:baseline;
+    /* margin-top: 20px; */
+  } 
+  .remember-checkbox {
+    margin-right: 10px;
+    font-family: 'SKODANext-Regular' ;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .button-container{
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align items vertically */
+    margin-top: 30px;
+  }
+  .login-btn {
+    border-style: none;
+    border-radius: 25px;
+    background-color: #3BA937;
+    color: white;
+    align-items:flex-start;
+    justify-content: flex-start;
+
+    height: 48px; /* Match the height to the input fields */
+    width: 113px;
+    /* flex-grow: 1; Button takes up the available space */
+    margin-right: 15px; /* Space between button and link */
+    margin-bottom: 0px;
+  }
+  .login-btn:hover{
+    background-color: #266d23;
+  }
+  .forgot-password {
+    color: #3BA937;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background: none;
+    padding: 0; /* Remove padding */
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 14px; /* Adjust font size to match the design */
+    margin-top: 0px; /* Adjust position to be closer to the login button */
+    margin-bottom: 0px;
+    /* padding: 10px 0; Vertical padding, no horizontal padding */
+    text-decoration: underline; /* Underline to signify clickable link */
+  }
+  
+  .footer {
+    width: 100%; /* Full width */
+    position: relative; /* Positioned relative to its normal position */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 30px; Space above the footer */
+    z-index: 10; /* Ensures it is above other elements */
+    margin-top: 10px;
+  }
+  
+  .footer img {
+    max-width: 100%; /* Ensures image is responsive and does not overflow its container */
+    height: auto; /* Maintain aspect ratio */
+    /* margin: 0 auto; Center footer within the right section */
+    /* display: inline-block; Display images inline with space in between */
+  }
+  
+  /* Add additional responsive styling as needed */
+  
