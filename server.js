@@ -161,7 +161,7 @@ app.get('/', (req, res) => { //Changes made to root route
 });
 
 // Checking Server Connection Settings
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5001;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.34dae581.css",
+    "main.js": "/static/js/main.3b981530.js",
+    "static/js/453.d7a3dadb.chunk.js": "/static/js/453.d7a3dadb.chunk.js",
+    "static/media/login_banner.jpg": "/static/media/login_banner.e8fa970ec3dd1d2707e9.jpg",
+    "static/media/SKODANext-Bold.otf": "/static/media/SKODANext-Bold.eb1f32ac37a39d82c732.otf",
+    "static/media/SKODANext-Light.otf": "/static/media/SKODANext-Light.6383f3b9cb01966f6584.otf",
+    "static/media/SKODANext-Regular.otf": "/static/media/SKODANext-Regular.447101316a5d2c0d4143.otf",
+    "static/media/Smartmsafe.png": "/static/media/Smartmsafe.8baf4beb8221075df285.png",
+    "static/media/area_map.png": "/static/media/area_map.333658e6146be33419b9.png",
+    "static/media/header_bg.jpg": "/static/media/header_bg.bbc39f979b9084c9100c.jpg",
+    "index.html": "/index.html",
+    "main.34dae581.css.map": "/static/css/main.34dae581.css.map",
+    "main.3b981530.js.map": "/static/js/main.3b981530.js.map",
+    "453.d7a3dadb.chunk.js.map": "/static/js/453.d7a3dadb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34dae581.css",
+    "static/js/main.3b981530.js"
+  ]
+}
