@@ -157,7 +157,13 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Display Index Page - This catch-all route must be the last route defined
 app.get('/', (req, res) => { //Changes made to root route
-  res.sendFile(path.join(__dirname, '/build/index.html'));
+  res.sendFile(path.join(__dirname, '/build/index.html'),
+    function(err){
+      if(err){
+        res.status(500).send(err);
+      }
+    }
+);
 });
 
 // Checking Server Connection Settings
