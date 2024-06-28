@@ -12,10 +12,10 @@ app.use(express.json());
 
 // Database connection settings
 const db = mysql.createConnection({
-  host: '127.0.0.1',
+  host: 'localhost',
   port: 3306,
   user: 'root',
-  password: 'Alphacharlie2702',
+  password: 'admin',
   database: 'msafe'
 });
 
