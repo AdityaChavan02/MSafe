@@ -38,7 +38,7 @@ app.post('/api/login', (req, res) => {
     return res.status(400).json({ success: false, message: 'Email and password are required' });
   }
 
-  const query = 'SELECT Email_Id, Password FROM User WHERE Email_Id = ?';
+  const query = 'SELECT email, password FROM users WHERE email = ?';
   console.log('Executing query:', query, 'with email:', email);
 
   db.query(query, [email], async (err, result) => {
@@ -51,13 +51,16 @@ app.post('/api/login', (req, res) => {
     if (result.length > 0) {
       const user = result[0];
       console.log('User found:', user);
-      if (password === user.Password) { // Ensure column name case matches
+      if (password === user.password) { // Ensure column name case matches
         res.json({ success: true, message: 'User Validated' }); // If credentials match
+        console.log('User validated');
       } else {
         res.status(401).json({ success: false, message: 'Invalid email or password' }); // If credentials do not match
+        console.log('User Invalid');
       }
     } else {
       res.status(404).json({ success: false, message: 'User not found' }); // If no user found
+      console.log('User Not found');
     }
   });
 });
@@ -156,8 +159,8 @@ app.get('/api/User', (req, res) => {
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Display Index Page - This catch-all route must be the last route defined
-app.get('/', (req, res) => { //Changes made to root route
-  res.sendFile(path.join(__dirname, '/build/index.html'),
+app.get('/*', (req, res) => { //Changes made to root route
+  res.sendFile(path.join(__dirname, 'build/index.html'),
     function(err){
       if(err){
         res.status(500).send(err);
