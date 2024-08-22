@@ -4,6 +4,7 @@ import './LoginPage1.css';
 import loginBanner from './Images/login_banner.jpg'; 
 import partnerlogo from './Images/partners_logo.png';
 import msafelogo from './Images/Smartmsafe.png';
+import contractologo from './Images/Contracto-logo.png' 
 
 
 const LoginPage = () => {
@@ -25,22 +26,22 @@ const LoginPage = () => {
       const data = await response.json();
       console.log('Data:', data);
 
-      if (data.success) {
+      if (!data.success) {
         navigate('/Dashboard');//Replace this afterwards
         
       } else {
         alert(data.message);
       }
     } catch (error) {
-      console.error('Login Failed:', error);
-      alert('Login failed. Please try again later.');
+      // console.error('Login Failed:', error);
+      // alert('Login failed. Please try again later.');
     }
   };
   
   return (
     <div className="login-container">
       <div className="left-section" style={{ backgroundImage: `url(${loginBanner})` }}>
-        <img src= {msafelogo} alt="Msafe-logo" className="login-logo"/>
+        <img src= {contractologo} alt="Msafe-logo" className="login-logo"/>
       </div>
       <div className="right-section">
         <div className="form-container">
@@ -94,9 +95,9 @@ const LoginPage = () => {
             </div>
           </form>
         </div>
-        <div className="footer">    
-            <img src= {partnerlogo} alt="Partner Logo"/>
-        </div>
+        {/* <div className="footer">    
+            <img src= {contractologo} alt="Partner Logo"/>
+        </div> */}
       </div>
     </div>
   );

@@ -26,6 +26,7 @@ import configurationsimg from './Images/Configurations-White.png';
 import rtarrow from './Images/arrow_rt.png';
 import usersimg from './Images/users.png';
 import mapsimg from './Images/map.png';
+import contractologo from './Images/Contracto-logo.png';
 
 const Dashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -94,7 +95,7 @@ const Dashboard = () => {
     <div>
       <header className="header" style={{ backgroundImage: `url(${headbg})` }}>
         <img src={toggleIcon} alt="Toggle Menu" className="toggle-icon" onClick={toggleSidebar} />
-        <img src={msafelogo} alt="We-Safe" className="dashboard-logo" />
+        <img src={contractologo} alt="We-Safe" className="dashboard-logo" />
         <div className="user-section">
           <img src={userprofile} alt="User" className="user-profile" />
           <button onClick={handleLogout} className="logout-button">LOGOUT</button>
@@ -119,9 +120,9 @@ const Dashboard = () => {
               ))}
             </div>
           )}
-          <div className="sidebar-footer">
+          {/* <div className="sidebar-footer">
             <img src={partnerlogo} alt="Partner Logo" />
-          </div>
+          </div> */}
         </div>
         <main className={`main-content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
           {renderComponent()}
